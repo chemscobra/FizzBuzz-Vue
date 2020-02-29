@@ -1,0 +1,32 @@
+{
+  "name": "fizzbuzz-vue",
+  "version": "1.0.0",
+  "description": "Just a little vue demo with fizzbuzz exercise",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chemscobra/fizzbuzz-vue.git"
+  },
+  "keywords": [
+    "fizzbuzz",
+    "vue.js"
+  ],
+  "author": "Gustavo León",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chemscobra/fizzbuzz-vue/issues"
+  },
+  "homepage": "https://github.com/chemscobra/fizzbuzz-vue#readme",
+  "dependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^1.19.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-plugin-vue": "^6.2.1"
+  }
+}

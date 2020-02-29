@@ -1,2 +1,6 @@
-# fizzbuzz-vue
-Just a little demo using fizzbuzz exercise
+# FizzBuzz Vue.js
+
+Just a little vue.js demo with the FizzBuzz exercise
+
+[DEMO]()
+

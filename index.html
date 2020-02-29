@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.materialdesignicons.com/4.9.95/css/materialdesignicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Fizz Buzz Vue.js</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <div class="card">
+              <div class="card-content">
+                <div class="content">
+                  <div class="control has-icons-left has-icons-right">
+                    <input
+                      v-model.number="number"
+                      class="input is-large"
+                      type="number"
+                      placeholder="Enter an integer number"
+                      max="maxNumber"
+                    />
+                    <span class="icon is-medium is-left">
+                      <i class="mdi mdi-24px mdi-dark mdi-numeric"></i>
+                    </span>
+                  </div>
+                  <transition name="fade">
+                    <div
+                      v-if="number > maxNumber"
+                      class="notification is-danger is-light"
+                    >
+                      <button class="delete"></button>
+                      <strong>Number must be lower than {{maxNumber}}</strong>
+                    </div>
+                  </transition>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="columns is-multiline">
+              <div
+                class="column"
+                v-for="(item, index) in fizzbuzz"
+                :key="item+index"
+              >
+                <div
+                  class="tag"
+                  :class="[/[^a-zA-Z]/.test(item) ? 'is-success' : 'is-warning']"
+                  style="width: 100%;"
+                >
+                  {{ item }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="js/app.js"></script>
+</html>
