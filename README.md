@@ -2,5 +2,5 @@
 
 Just a little vue.js demo with the FizzBuzz exercise
 
-[DEMO]()
+[DEMO](https://chemscobra.github.io/fizzbuzz-vue/)
 
